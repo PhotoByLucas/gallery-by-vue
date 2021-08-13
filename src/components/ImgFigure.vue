@@ -1,8 +1,8 @@
 <template>
   <figure class="img-figure" :style="figureStyle"  @click="clickImg">
-    <img :src="imgdata.imageURL" :alt="imgdata.desc" >
+    <img :src="imgdata.imageURL" :alt="imgdata.desc" width="75%" height="75%">
       <figcaption class="fig-caption">
-        <h2 class="img-title"  >{{imgdata.fileName}}</h2>
+        <h2 class="img-title"  >{{imgdata.title}}</h2>
           <div class="img-back" :class="imgdata.isInverse? 'img-inverse': ''" :style="backStyle">
              <p>{{imgdata.desc}}</p>
           </div>
@@ -15,6 +15,8 @@
   position: absolute;
   margin: 0;
   padding: 14px;
+  text-align:center;
+
 
   background: #F4F0EC;
 
